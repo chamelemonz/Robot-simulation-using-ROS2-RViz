@@ -7,7 +7,7 @@ Simple Universal Robot simulation in ROS2 and connecting to a real UR10.
 Ubuntu Noble 24.04,
 ROS 2 Jazzy Desktop
 
-## ROS2 packages
+## ROS 2 packages
 colcon-common-extensions,
 ur_robot_driver
 
@@ -21,7 +21,7 @@ After sourcing the environment, necessary packages were installed using the term
 ```bash
 sudo apt update
 sudo apt install python3-colcon-common-extensions
-sudo apt install ros_jazzy_ur
+sudo apt install ros-jazzy-ur
 ```
 ## Simulation
 For a simple simulation, ur_robot_driver package had all the necessary scripts.
@@ -29,11 +29,11 @@ Simulation was done by using ur_robot_driver mock hardware and Moveit2 MotionPla
 
 Terminal 1
 ```bash
-ros 2 launch ur_robot_driver ur_control.launch.py ur_type:=ur10 robot_ip:=0.0.0.0 use_mock_hardware:=true
+ros2 launch ur_robot_driver ur_control.launch.py ur_type:=ur10 robot_ip:=0.0.0.0 use_mock_hardware:=true
 ```
 Terminal 2
 ```bash
-ros 2 launch ur_moveit_config ur_moveit_launch.py ur_type:=ur10 launch_rviz:=true
+ros2 launch ur_moveit_config ur_moveit_launch.py ur_type:=ur10 launch_rviz:=true
 ```
 
 
@@ -60,7 +60,7 @@ https://docs.universal-robots.com/Universal_Robots_ROS2_Documentation/doc/ur_cli
 The ROS2 machine was assigned with a static ip in the same subnet. Devices were the connected to the same network.
 
 Launching the ROS2 was the same as in the simulation but with real robot ip and no mock hardware. The UR10 connected succesfully and the position of the robot could be seen at in the RViz2 window. 
-However when trying to exercute a movement from the MotionPlanning panel it failed.
+However when trying to execute a movement from the MotionPlanning panel it failed.
 
 
 
