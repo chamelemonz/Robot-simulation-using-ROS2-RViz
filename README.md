@@ -16,7 +16,7 @@ ROS 2 was installed using the official documentation.
 
 https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html
 
-After sourcing the environment, necessary packages were installed using the terminal.
+After sourcing the environment, necessary packages were installed.
 
 ```bash
 sudo apt update
