@@ -25,7 +25,7 @@ sudo apt install ros-jazzy-ur
 ```
 ## Simulation
 For a simple simulation, ur_robot_driver package had all the necessary scripts.
-Simulation was done by using ur_robot_driver mock hardware and Moveit2 MotionPlanning panel in RViz2.
+Simulation was done by using ur_robot_driver mock hardware and Moveit2 MotionPlanning panel in RViz.
 
 Terminal 1
 ```bash
@@ -59,7 +59,7 @@ https://docs.universal-robots.com/Universal_Robots_ROS2_Documentation/doc/ur_cli
 
 The ROS2 machine was assigned with a static ip in the same subnet. Devices were the connected to the same network.
 
-Launching the ROS2 was the same as in the simulation but with real robot ip and no mock hardware. The UR10 connected succesfully and the position of the robot could be seen at in the RViz2 window. 
+Launching the ROS2 was the same as in the simulation but with real robot ip and no mock hardware. The UR10 connected succesfully and the position of the robot could be seen at in the RViz window. 
 However when trying to execute a movement from the MotionPlanning panel it failed.
 
 
